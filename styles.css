@@ -114,5 +114,6 @@ h1, h2, h3 {
 }
 
 #tienda .producto img {
-
-::contentReference[oaicite:0]{index=0}
+    width: 100%;
+    height: auto;
+}
