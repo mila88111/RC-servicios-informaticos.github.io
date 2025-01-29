@@ -9,11 +9,40 @@ body {
     padding: 0;
 }
 
+/* Contenedor Principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Logo */
 .logo {
     max-width: 150px;
     display: block;
     margin: 20px auto;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
 }
 
 /* Títulos */
@@ -30,7 +59,7 @@ h1, h2, h3 {
 
 /* Sección Servicios */
 #servicios {
-    padding: 40px 20px;
+    padding: 40px 0;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -57,40 +86,9 @@ h1, h2, h3 {
     height: auto;
 }
 
-/* Sección Contacto */
-#contacto {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-#contacto h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#contacto .social-media {
-    margin: 20px 0;
-}
-
-#contacto .social-media a {
-    text-decoration: none;
-    color: #007BFF;
-    font-size: 1.5rem;
-    margin: 0 15px;
-}
-
-#contacto .social-media a:hover {
-    color: #0056b3;
-}
-
-#contacto #map {
-    margin-top: 20px;
-}
-
 /* Sección Tienda */
 #tienda {
-    padding: 40px 20px;
+    padding: 40px 0;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -114,6 +112,12 @@ h1, h2, h3 {
 }
 
 #tienda .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
+#tienda .producto h3 {
+    font-size: 
 ::contentReference[oaicite:0]{index=0}
  
