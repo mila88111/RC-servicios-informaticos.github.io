@@ -114,22 +114,6 @@ h1, h2, h3 {
 }
 
 #tienda .producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
 
-#tienda .btn {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-#tienda .btn:hover {
-    background-color: #0056
 ::contentReference[oaicite:0]{index=0}
  
