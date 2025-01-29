@@ -1,74 +1,130 @@
-/* Estilos básicos */
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+/* General */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Animación Fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Sección Servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
     color: #333;
 }
 
-header {
-    background-color: #003366; /* Azul oscuro */
-    color: white;
-    padding: 30px;
+#servicios .videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servicios .video {
+    margin: 20px;
+}
+
+#servicios iframe {
+    max-width: 100%;
+    height: 315px;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 40px 20px;
     text-align: center;
+    background-color: #f1f1f1;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-.services, .products {
-    background-color: #e6f1f3; /* Azul claro */
-    padding: 20px;
+#contacto .social-media {
     margin: 20px 0;
-    border-radius: 8px;
 }
 
-.services h2, .products h2 {
-    color: #008080; /* Verde azulado */
+#contacto .social-media a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin: 0 15px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#contacto .social-media a:hover {
+    color: #0056b3;
 }
 
-ul li {
-    font-size: 1.1em;
-    padding: 5px 0;
+#contacto #map {
+    margin-top: 20px;
 }
 
-button {
-    padding: 12px 24px;
-    background-color: #008080; /* Verde azulado */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-button:hover {
-    background-color: #006666; /* Verde más oscuro */
-}
-
-footer {
-    background-color: #003366; /* Azul oscuro */
-    color: white;
+/* Sección Tienda */
+#tienda {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
+#tienda h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#tienda .productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#tienda .producto {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+#tienda .producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#tienda .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#tienda .btn:hover {
+    background-color: #0056b3;
 }
