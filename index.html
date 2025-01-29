@@ -1,92 +1,119 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RC Servicios Informáticos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo RC Servicios Informáticos" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#tienda">Tienda</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="container">
-            <h1>Bienvenido a RC Servicios Informáticos</h1>
-            <p>Soluciones tecnológicas a tu alcance</p>
-            <a href="#servicios" class="btn">Nuestros Servicios</a>
-        </div>
-    </section>
+/* General */
+body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+}
 
-    <!-- Servicios -->
-    <section id="servicios">
-        <div class="container">
-            <h2>Servicios</h2>
-            <p>En RC Servicios Informáticos ofrecemos una variedad de soluciones tecnológicas:</p>
-            <div class="videos">
-                <div class="video">
-                    <h3>Reparación de PCs</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <h3>Venta de Notebooks</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Logo */
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 20px auto;
+}
 
-    <!-- Tienda -->
-    <section id="tienda">
-        <div class="container">
-            <h2>Tienda</h2>
-            <p>Aquí encontrarás una selección de productos disponibles para comprar:</p>
-            <div class="productos">
-                <div class="producto">
-                    <img src="images/producto1.jpg" alt="Producto 1">
-                    <h3>Producto 1</h3>
-                    <p>Descripción del producto 1.</p>
-                    <a href="URL_DEL_PRODUCTO" class="btn">Ver más</a>
-                </div>
-                <div class="producto">
-                    <img src="images/producto2.jpg" alt="Producto 2">
-                    <h3>Producto 2</h3>
-                    <p>Descripción del producto 2.</p>
-                    <a href="URL_DEL_PRODUCTO" class="btn">Ver más</a>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    animation: fadeIn 1.5s ease-out;
+}
 
-    <!-- Contacto -->
-    <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>¡No dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o ven a visitarnos!</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/TU_FACEBOOK" target="_blank">Facebook</a>
-            </div>
-            <h3>Ubicación</h3>
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=TU_CODIGO_DE_MAPA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
+/* Animación Fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Sección Servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#servicios .videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servicios .video {
+    margin: 20px;
+    width: 100%;
+    max-width: 560px;
+}
+
+#servicios iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#contacto .social-media {
+    margin: 20px 0;
+}
+
+#contacto .social-media a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+
+#contacto .social-media a:hover {
+    color: #0056b3;
+}
+
+#contacto #map {
+    margin-top: 20px;
+}
+
+/* Sección Tienda */
+#tienda {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#tienda h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#tienda .productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#tienda .producto {
+    width: 100%;
+    max-width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+#tienda .producto img {
+
+::contentReference[oaicite:0]{index=0}
+ 
