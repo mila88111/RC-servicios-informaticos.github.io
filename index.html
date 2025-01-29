@@ -3,37 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RC Servicios Técnicos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RC Servicios Informáticos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a RC Servicios Técnicos</h1>
-        <p>Soluciones en PC, notebooks e impresoras</p>
+        <img src="images/logo.png" alt="Logo RC Servicios Informáticos" class="logo">
     </header>
-
-    <main>
-        <section class="services">
-            <h2>Servicios que ofrecemos</h2>
-            <ul>
-                <li>Reparación de PC y notebooks</li>
-                <li>Venta de accesorios y repuestos</li>
-                <li>Mantenimiento de impresoras</li>
-            </ul>
-        </section>
-
-        <section class="products">
-            <h2>Productos a la venta</h2>
-            <p>Ofrecemos una amplia variedad de productos relacionados con tecnología. ¡Contáctanos para más información!</p>
-        </section>
-
-        <button id="btn-click">Contáctanos</button>
-    </main>
-
-    <footer>
-        <p>© 2025 RC Servicios Técnicos</p>
-    </footer>
-
-    <script src="script.js"></script>
+    
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>En RC Servicios Informáticos ofrecemos una variedad de soluciones tecnológicas:</p>
+        <div class="videos">
+            <div class="video">
+                <h3>Reparación de PCs</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <h3>Venta de Notebooks</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡No dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o ven a visitarnos!</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/TU_FACEBOOK" target="_blank">Facebook</a>
+        </div>
+        <h3>Ubicación</h3>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+    
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <p>Aquí encontrarás una selección de productos disponibles para comprar:</p>
+        <div class="productos">
+            <div class="producto">
+                <img src="images/producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1.</p>
+                <a href="URL_DEL_PRODUCTO" class="btn">Ver más</a>
+            </div>
+            <div class="producto">
+                <img src="images/producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción del producto 2.</p>
+                <a href="URL_DEL_PRODUCTO" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
