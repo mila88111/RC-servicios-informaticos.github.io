@@ -9,28 +9,64 @@ body {
     padding: 0;
 }
 
-/* Logo */
-.logo {
-    max-width: 150px;
-    display: block;
-    margin: 20px auto;
+/* Barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
-/* Títulos */
-h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-    animation: fadeIn 1.5s ease-out;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
-/* Animación Fade-in */
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #00FF00; /* Cambia el color al que prefieras */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('images/hero-image.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 /* Sección Servicios */
 #servicios {
-    padding: 40px 20px;
+    padding: 60px 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -41,25 +77,80 @@ h1, h2, h3 {
 }
 
 #servicios .videos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
 
 #servicios .video {
     margin: 20px;
-    width: 100%;
-    max-width: 560px;
 }
 
 #servicios iframe {
     width: 100%;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Tienda */
+#tienda {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#tienda h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#tienda .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+#tienda .producto {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#tienda .producto:hover {
+    transform: scale(1.05);
+}
+
+#tienda .producto img {
+    width: 100%;
     height: auto;
+    border-radius: 8px;
+}
+
+#tienda .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00FF00;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#tienda .btn:hover {
+    background-color: #009900;
 }
 
 /* Sección Contacto */
 #contacto {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
     background-color: #f1f1f1;
 }
@@ -78,6 +169,7 @@ h1, h2, h3 {
     color: #007BFF;
     font-size: 1.5rem;
     margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 #contacto .social-media a:hover {
@@ -86,48 +178,11 @@ h1, h2, h3 {
 
 #contacto #map {
     margin-top: 20px;
-    
-/* Estilos para el mapa */
+}
+
 #map iframe {
     width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-#map {
-    position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;
-    overflow: hidden;
-}
-
-
-/* Sección Tienda */
-#tienda {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-#tienda h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#tienda .productos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#tienda .producto {
-    width: 100%;
-    max-width: 30%;
-    margin: 20px;
-    text-align: center;
-}
-
-#tienda .producto img {
-    width: 100%;
-    height: auto;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
